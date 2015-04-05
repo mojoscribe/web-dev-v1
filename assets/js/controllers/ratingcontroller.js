@@ -1,0 +1,1 @@
+var RateController=["$scope","$http",function(e,t){t.defaults.headers.common["XSRF_TOKEN"]=$("#csrf").val();e.post={ratingValue:"45",label:"Click",value:100};e.rating=function(n){var r=n.pageY-100;var i=baseUrl+"rating/saveRating?rating="+r;var s=e.post;t.post(i,s).success(function(e){})}}]

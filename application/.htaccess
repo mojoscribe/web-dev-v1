@@ -1,0 +1,4 @@
+Deny from all
+<Files /helpers/CI_helper.php>
+	Order Allow,Deny
+</Files>

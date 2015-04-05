@@ -1,0 +1,1 @@
+var SliderCtrl=["$scope","$http",function(e,t){t.defaults.headers.common["XSRF_TOKEN"]=$("#csrf").val();e.posts=[];e.slider=function(){var n=baseUrl+"post/getRecentPosts";t.get(n).success(function(t){e.posts=t});setTimeout(function(){for(var t=0;t<e.posts.length;t++){e.displayPost=e.posts[t]}},2e3)};e.slider()}]

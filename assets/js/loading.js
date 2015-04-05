@@ -1,0 +1,1 @@
+function showLoading(e,t){$("#loading-modal .modal-body").html(t);$("#loading-modal").modal("show")}function hideLoading(){$("#loading-modal").modal("hide")}function showLoadingError(e,t){$("#loadingError-modal .modal-body").html(t);$("#loadingError-modal").modal("show")}function hideLoadingError(){$("#loadingError-modal").modal("hide")}

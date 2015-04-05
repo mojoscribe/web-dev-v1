@@ -1,0 +1,1 @@
+$(document).ready(function(e){var t=false;$("#registrationForm").submit(function(e){var n=$("#password").val();var r=$("#confirmPassword").val();if(n!=r){$("#confirmPassword").addClass("error-class");t=true;$("#confirmPassword").innerHTML="Passwords must be same"}else{$("#confirmPassword").removeClass("error-class")}if(t){e.preventDefault();return false}})})

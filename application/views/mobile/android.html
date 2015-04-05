@@ -1,0 +1,129 @@
+<html>
+	<head>
+        <style>
+
+			body{
+				background-color: #c50000;
+				color: #fff;
+				font-family: 'OpenSans-Regular';
+			}
+
+			@font-face {
+			  font-family: 'Open Sans';
+			  font-style: normal;
+			  font-weight: 300;
+			  src: url('../fonts/OpenSans-Heavy.woff')
+			      ,url('../fonts/OpenSans-Heavy.woff'); /* IE9 */
+			}
+			@font-face {
+			  font-family: 'Open Sans Light';
+			  font-style: lighter;
+			  font-weight: 400;
+			  src: url('../fonts/OpenSans-Light.woff')
+			      ,url('../fonts/OpenSans-Light.woff'); /* IE9 */
+			}
+
+			@font-face {
+			  font-family: 'OpenSans-Regular';
+			  font-style: lighter;
+			  font-weight: 400;
+			  src: url('../fonts/OpenSans-Regular.ttf');
+			}
+
+
+			.logo{
+				margin-left: auto;
+				margin-right: auto;
+				width: 42%;
+				margin-top: 150px;
+				margin-bottom: 150px;
+			}
+
+			#logo{
+				width: 400px;
+				height: 100px;
+			}
+
+			.msg{
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+				margin-top: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+
+			.sitelink{
+				margin-right: auto;
+				margin-left: auto;
+				width: 21%;
+				margin-top: 40px;
+				font-size: 25px;
+			}
+
+			#continuetosite{
+				color: #fff;
+				text-decoration: none;
+			}
+
+			.block{
+				/*height: 150px;
+				width: 526px;
+				background-color: #fff;*/
+				width: 54%;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.iTunes{
+				width: 48%;
+				margin-right: auto;
+				margin-left: auto;	
+				margin-top: 200px;
+			}
+
+			.iTunes > p{
+				width: 80%;
+				margin-right: auto;
+				margin-left: auto;	
+				margin-top: 200px;
+				text-decoration: bold;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo">
+			<img id="logo" src="<?php echo ('http://mojoscribe.com/assets/images/logo.png'); ?>" alt="">
+		</div>
+
+		<div class="msg">
+			<p style="margin-top:0px;">Want to use MojoScribe on your phone?</p>
+			<p style="margin-bottom:0px; margin-top:0px;">Please download our app.</p>
+			<p style="margin-top:80px;">We are currently available on</p>
+		</div>
+
+		<div class="block">
+			<a href="" target="_blank"><img src="<?php echo ('http://mojoscribe.com/assets/images/android-btn.png'); ?>" alt="" style="height:150px; width:526px;"></a>
+		</div>
+
+		<div class="sitelink">
+			<a id="continuetosite">Continue to site</a>
+		</div>
+
+		<div class="iTunes">
+			<p>We will be coming soon on</p>
+			<img src="<?php echo ('http://mojoscribe.com/assets/images/itunes-icon.png'); ?>" alt="" style="height:120px; width:426px;">
+		</div>
+		<script src="<?php echo base_url(''); ?>assets/js/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(e){
+			$('#continuetosite').click(function(){
+				document.cookie = "click=continue";
+				window.location = '<?php echo base_url(); ?>';
+			})
+		})
+		</script>
+	</body>
+</html>

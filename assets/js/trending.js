@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#navParent").offset().top;var t=$("#navParent").offset().left;t=t+30+1024;e=e+110;$("#trendingView").css("left",t+"px");$("#trendingView").css("top",e+"px")})

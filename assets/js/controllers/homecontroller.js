@@ -1,0 +1,1 @@
+var HomeCtrl=["$scope","$http",function(e,t){t.defaults.headers.common["XSRF_TOKEN"]=$("#csrf").val();e.breakingPosts=[];e.recentNews=[];e.relatedNews=[];e.getBreakingPosts=function(){var n=baseUrl+"mainPage/getBreakingsdPosts";t.get(n).success(function(t){e.breakingP})};e.getBreakingPosts()}]

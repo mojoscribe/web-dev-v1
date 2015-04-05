@@ -1,0 +1,98 @@
+.newsRoom-button-panel{
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 5px;
+	height: 50px;
+	margin-bottom: 6px;
+	color: #dedcdd;
+	margin-right:-8px;
+	margin-left:-8px;
+}
+
+.newsRoom-button-panel select{
+	border-radius: 0px;
+	height: 40px;
+	width: 200px;
+	font-size: 16px;
+	background-color: white;
+	border: 1px solid;
+	border-color: #ccc;
+	color: #333;
+	padding: 10px;
+}
+
+.newsRoom-button-panel input{
+	border-radius: 0px;
+	height: 40px;
+	font-size: 15px;
+}
+
+.news-room-preference-1{
+	margin-left: -6px;
+	margin-right: -7px;
+}
+
+.preference-title{
+	padding: 0px;
+}
+
+.newsRoom-news{
+	padding: 0px;
+	height: 317px;
+}
+
+.news-item{
+	padding: 0px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 269px;
+	background-color: #fff;
+}
+
+.news-room-media img{
+	background-color: #fff;
+	height:165px;
+	width: 269px;
+	display: block;
+}
+
+.news-room-description{
+	padding: 10px;
+}
+
+.news-room-date{
+	height: 30px;
+}
+
+.news{
+	margin-left: -6px;
+	margin-right: -7px;
+	height: 100%;
+}
+
+.recent-title{
+	padding: 0px;
+}
+
+.recent-title h3{
+	margin-top:10px;
+}
+
+.news-room-single-post{
+	height:350px;
+	background-color: #ccc;
+}
+
+.news-room-single-post-description{
+	height: 120px;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	margin-bottom: 20px;
+}
+
+.news-room-single-post-description p{
+	font-size: 2em;
+	padding: 10px;
+
+}

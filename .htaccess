@@ -1,0 +1,11 @@
+RewriteEngine on
+
+# Now the CodeIgniter part
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^www\.mojoscribe\.com
+RewriteRule (.*) http://mojoscribe.com/$1 [R=301,L]
+
